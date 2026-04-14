@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Ramut\\OneDrive\\Desktop\\ME\\CyberAwarenessBot\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{511BB6F8-A1EA-47B8-92E2-15683FFFFD2C}|CyberAwarenessBot.csproj|c:\\users\\ramut\\onedrive\\desktop\\me\\cyberawarenessbot\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{511BB6F8-A1EA-47B8-92E2-15683FFFFD2C}|CyberAwarenessBot.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{511BB6F8-A1EA-47B8-92E2-15683FFFFD2C}|CyberAwarenessBot.csproj|c:\\users\\ramut\\onedrive\\desktop\\me\\cyberawarenessbot\\greetings.wav||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{511BB6F8-A1EA-47B8-92E2-15683FFFFD2C}|CyberAwarenessBot.csproj|solutionrelative:greetings.wav||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "greetings.wav",
+              "DocumentMoniker": "C:\\Users\\Ramut\\OneDrive\\Desktop\\ME\\CyberAwarenessBot\\greetings.wav",
+              "RelativeDocumentMoniker": "greetings.wav",
+              "ToolTip": "C:\\Users\\Ramut\\OneDrive\\Desktop\\ME\\CyberAwarenessBot\\greetings.wav",
+              "RelativeToolTip": "greetings.wav",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHoSURBVDhPhZM/aBNxFMc/ucaGJrQSdUgQUwoOlWLUxQyazXZxc1BwcXFxUhSHDAqCkE26VRdRN3EUhExH1jiIWOuStBCphYjG47yjd7nf7zncn\u002BTaqg\u002BOe/zee5/3/X25yxCFaZoS538LEVG1Wu1BoVBoxgdJ0TRNCUYjCYKRKBWIUoForURrJUEwEq2VdDodabVaqr/99VY8Z8SJiCAIyBgcvw0jbPN9n3q9bnxZ31jt9Xo3UgCt9T8hAI7j0G630VpPd7vdFymAiIBICIny/tDj9utNNgcuAMvLlzhTrXJqcTGB7lNApEIEpqYyrHV9HnbH4FK5RGW\u002Bgtb6YMDkM5M1uF49yputn7z8/D1uTUUCUEoRChirGDgjpm2Lxwuae63tlDdKqTRgrwJEqBzO8l7b3D1/nOJuITI4rB94hbAYblkfeDzd8Jg9lOND3\u002BGb64bwyPB9gCAIku3XXu2w8nbI/Y8e/u8cO7bPo9P5ZDsS9qcAk9LfGbP8mDFguMunLYvSXJY7VxbGVyTqnQRYlpXIO\u002Bv1wbNAfnFhKU\u002B1nI\u002BGSVRYlpUG2LaduP/k8jzPa0dYvVjk2cqJZGhSpW3baYAbmYTAuWM5rp6c4\u002BZSkXLeSLkfm\u002By64deZiQGNRuO/v/PeaDabmT81H4u2rQbLnAAAAABJRU5ErkJggg==",
+              "WhenOpened": "2026-04-14T09:26:48.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Ramut\\OneDrive\\Desktop\\ME\\CyberAwarenessBot\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Ramut\\OneDrive\\Desktop\\ME\\CyberAwarenessBot\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAIwHMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T18:24:41.599Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
