@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ramut\\OneDrive\\Desktop\\ME\\CyberAwarenessBot\\CyberAwarenessBot.csproj": {}
+    "C:\\Users\\Ramut\\OneDrive\\Documents\\GitHub\\CYBERAWARENESSBOT\\CyberAwarenessBot\\CyberAwarenessBot.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ramut\\OneDrive\\Desktop\\ME\\CyberAwarenessBot\\CyberAwarenessBot.csproj": {
+    "C:\\Users\\Ramut\\OneDrive\\Documents\\GitHub\\CYBERAWARENESSBOT\\CyberAwarenessBot\\CyberAwarenessBot.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ramut\\OneDrive\\Desktop\\ME\\CyberAwarenessBot\\CyberAwarenessBot.csproj",
+        "projectUniqueName": "C:\\Users\\Ramut\\OneDrive\\Documents\\GitHub\\CYBERAWARENESSBOT\\CyberAwarenessBot\\CyberAwarenessBot.csproj",
         "projectName": "CyberAwarenessBot",
-        "projectPath": "C:\\Users\\Ramut\\OneDrive\\Desktop\\ME\\CyberAwarenessBot\\CyberAwarenessBot.csproj",
+        "projectPath": "C:\\Users\\Ramut\\OneDrive\\Documents\\GitHub\\CYBERAWARENESSBOT\\CyberAwarenessBot\\CyberAwarenessBot.csproj",
         "packagesPath": "C:\\Users\\Ramut\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ramut\\OneDrive\\Desktop\\ME\\CyberAwarenessBot\\obj\\",
+        "outputPath": "C:\\Users\\Ramut\\OneDrive\\Documents\\GitHub\\CYBERAWARENESSBOT\\CyberAwarenessBot\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ramut\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "E28I5U95fBc=",
+  "dgSpecHash": "ic9ne3KnijA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ramut\\OneDrive\\Desktop\\ME\\CyberAwarenessBot\\CyberAwarenessBot.csproj",
+  "projectFilePath": "C:\\Users\\Ramut\\OneDrive\\Documents\\GitHub\\CYBERAWARENESSBOT\\CyberAwarenessBot\\CyberAwarenessBot.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ramut\\.nuget\\packages\\system.windows.extensions\\10.0.5\\system.windows.extensions.10.0.5.nupkg.sha512"
   ],
