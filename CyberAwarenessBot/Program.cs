@@ -13,21 +13,18 @@ namespace CyberAwarenessBot
         {
             Console.Title = "🇿🇦 Cybersecurity Awareness Assistant";
 
-            PlayVoiceGreeting();           
+            PlayVoiceGreeting();
             DisplayAsciiArt();
+            ShowWelcomeMessage();
 
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine("=============================================================");
-            Console.WriteLine($"   Welcome to the {BotName} for South Africa!   ");
-            Console.WriteLine("=============================================================\n");
-            Console.ResetColor();
+            RunBot();
+        }
 
-            Console.WriteLine("I'm here to help you stay safe online.\n");
-
-            Thread.Sleep(800);
-
-            // Main loop
+        // 🔹 NEW: Separated main loop into its own method
+        static void RunBot()
+        {
             bool running = true;
+
             while (running)
             {
                 ShowMenu();
@@ -35,32 +32,39 @@ namespace CyberAwarenessBot
 
                 switch (choice)
                 {
-                    case "1": PhishingTopic(); break;
-                    case "2": PasswordTopic(); break;
-                    case "3": SafeBrowsingTopic(); break;
-                    case "4": CommonScamsTopic(); break;
-                    case "5": HackedTopic(); break;
+                    case "1": ShowMessage("🔴 Never share OTPs from unexpected messages."); break;
+                    case "2": ShowMessage("🔑 Use strong passphrases and enable MFA."); break;
+                    case "3": ShowMessage("🌐 Hover over links before clicking."); break;
+                    case "4": ShowMessage("🚨 Beware of fake SARS and bank scams."); break;
+                    case "5": ShowMessage("🛠️ Change passwords immediately and report to your bank."); break;
                     case "6": FreeQuestionMode(); break;
                     case "0":
-                        Console.ForegroundColor = ConsoleColor.Green;
-                        Console.WriteLine("\nThank you! Stay safe online 🇿🇦");
-                        Console.ResetColor();
+                        ExitMessage();
                         running = false;
                         break;
                     default:
-                        Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine("\n❌ Invalid choice. Please enter 0-6.");
-                        Console.ResetColor();
+                        ShowError("❌ Invalid choice. Please enter 0-6.");
                         break;
                 }
 
                 if (running)
                 {
-                    Console.WriteLine("\nPress any key to return to menu...");
-                    Console.ReadKey(true);
-                    Console.Clear();
+                    ReturnToMenu();
                 }
             }
+        }
+
+        // 🔹 NEW: Welcome message extracted
+        static void ShowWelcomeMessage()
+        {
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("=============================================================");
+            Console.WriteLine($"   Welcome to the {BotName} for South Africa!   ");
+            Console.WriteLine("=============================================================\n");
+            Console.ResetColor();
+
+            Console.WriteLine("I'm here to help you stay safe online.\n");
+            Thread.Sleep(800);
         }
 
         static void PlayVoiceGreeting()
@@ -72,9 +76,7 @@ namespace CyberAwarenessBot
             }
             catch
             {
-                Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.WriteLine("⚠️ Greeting.wav not found. Make sure the file is added and set to 'Copy if newer'.");
-                Console.ResetColor();
+                ShowError("⚠️ Greeting.wav not found. Make sure the file is added.");
             }
         }
 
@@ -108,18 +110,54 @@ namespace CyberAwarenessBot
             Console.Write("\nEnter your choice: ");
         }
 
-        static void PhishingTopic() => Console.WriteLine("\n🔴 Never share OTPs from unexpected messages.");
-        static void PasswordTopic() => Console.WriteLine("\n🔑 Use strong passphrases and enable MFA.");
-        static void SafeBrowsingTopic() => Console.WriteLine("\n🌐 Hover over links before clicking.");
-        static void CommonScamsTopic() => Console.WriteLine("\n🚨 Beware of fake SARS and bank scams.");
-        static void HackedTopic() => Console.WriteLine("\n🛠️ Change passwords immediately and report to your bank.");
+        // 🔹 NEW: Reusable message method
+        static void ShowMessage(string message)
+        {
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine($"\n{message}");
+            Console.ResetColor();
+        }
+
+        // 🔹 NEW: Error handler
+        static void ShowError(string message)
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine($"\n{message}");
+            Console.ResetColor();
+        }
+
+        // 🔹 NEW: Exit message
+        static void ExitMessage()
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("\nThank you! Stay safe online 🇿🇦");
+            Console.ResetColor();
+        }
+
+        // 🔹 NEW: Return-to-menu handler
+        static void ReturnToMenu()
+        {
+            Console.WriteLine("\nPress any key to return to menu...");
+            Console.ReadKey(true);
+            Console.Clear();
+        }
 
         static void FreeQuestionMode()
         {
             Console.WriteLine("\n💬 Ask anything (type 'back' to return):");
             while (true)
             {
-                if (Console.ReadLine()?.Trim().ToLower() == "back") break;
+                string input = Console.ReadLine()?.Trim().ToLower() ?? "";
+
+                if (input == "back") break;
+
+                // 🔹 NEW: Simple keyword-based responses
+                if (input.Contains("password"))
+                    ShowMessage("Use long passphrases and never reuse passwords.");
+                else if (input.Contains("phishing"))
+                    ShowMessage("Check sender addresses and avoid urgent requests.");
+                else
+                    ShowMessage("That's a great question! Stay cautious online.");
             }
         }
     }
