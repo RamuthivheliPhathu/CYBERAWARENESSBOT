@@ -6,13 +6,14 @@ namespace CyberAwarenessBot
 {
     class Program
     {
+        // Bot configuration
         public static string BotName { get; set; } = "Cybersecurity Awareness Assistant";
 
         static void Main(string[] args)
         {
             Console.Title = "🇿🇦 Cybersecurity Awareness Assistant";
 
-            PlayVoiceGreeting();           // Your recorded voice
+            PlayVoiceGreeting();           
             DisplayAsciiArt();
 
             Console.ForegroundColor = ConsoleColor.Cyan;
@@ -112,6 +113,7 @@ namespace CyberAwarenessBot
         static void SafeBrowsingTopic() => Console.WriteLine("\n🌐 Hover over links before clicking.");
         static void CommonScamsTopic() => Console.WriteLine("\n🚨 Beware of fake SARS and bank scams.");
         static void HackedTopic() => Console.WriteLine("\n🛠️ Change passwords immediately and report to your bank.");
+
         static void FreeQuestionMode()
         {
             Console.WriteLine("\n💬 Ask anything (type 'back' to return):");
